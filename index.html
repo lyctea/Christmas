@@ -6,17 +6,18 @@
     <title>圣诞主题</title>
     <style type="text/css">
         .bird {
-            min-width: 91px;
-            min-height: 71px;
+            width: 3rem;
+            height: 3rem;
             top: 10%;
             position: absolute;
             z-index: 10;
-            background: url(http://img.mukewang.com/55ade1700001b38302730071.png)
+            background: url(http://img.mukewang.com/55ade1700001b38302730071.png);
+            background-size: 300% 100%;
         }
 
         .birdFly {
             /*写法1*/
-         //   -moz-animation: bird-slow 400ms steps(1,start) infinite;
+            /*-moz-animation: bird-slow 400ms steps(1,start) infinite;*/
 
             -webkit-animation: bird-slow 400ms steps(3) infinite;
             -o-animation: bird-slow 400ms steps(3) infinite;
@@ -31,10 +32,10 @@
 
         @keyframes bird-slow {
             0% {
-                background-position-x: -0px;
+                background-position-x: -0rem;
             }
             100% {
-                background-position-x: -273px;
+                background-position-x: -9rem;
             }
         }
 
